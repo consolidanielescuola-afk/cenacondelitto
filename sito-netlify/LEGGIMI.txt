@@ -1,0 +1,10 @@
+SITO NETLIFY - L ULTIMO PROIETTILE
+
+Progetto Netlify gia creato: ultimo-proiettile (https://ultimo-proiettile.netlify.app)
+
+Per pubblicare dal computer (serve Node.js installato), apri il terminale in questa cartella e scrivi:
+
+  npx netlify-cli login
+  npx netlify-cli deploy --prod --site d911992b-5b46-4849-af80-4f2a19a9b7ee
+
+Foto del cast: mettile in public\foto-cast (daniele.jpg, sara.jpg, lisa.jpg, giovanni.jpg, raffaella.jpg, matteo.jpg, federico.jpg) e ripubblica.
