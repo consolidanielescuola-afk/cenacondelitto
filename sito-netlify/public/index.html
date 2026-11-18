@@ -756,7 +756,7 @@ var CHATS = {
     ["out","Nessuno ci ha visti, fidati di me amore mio.","23:41"],
     ["in","Va bene... ti amo da impazzire, anche se dovrò dividerti con lei ❤️","23:48"],
     ["out","Anch'io ti amo, più di quanto tu possa immaginare. Questo tra noi non finirà mai, nemmeno dopo il 14 settembre ❤️","23:52"]]},
-  michele:{name:"Coso",color:"#7a7f87",time:"07:02",preview:"Buongiornissimo!!! ☕☕ Oggi si gira il finale!!!",unread:false,day:"3 settimane fa",recovered:true,msgs:[
+  michele:{name:"Coso",color:"#7a7f87",time:"21:04",preview:"Ho saputo della tragedia!!! 😱 Sentite condoglianze!!!",unread:false,day:"3 settimane fa",recovered:true,msgs:[
     ["in","Buongiornissimo!!! ☕☕☕ Kaffèèè??? 😁","06:58"],
     ["in","Sono Michele, il cameraman 🎥 Ho preso il tuo numero dal foglio convocazioni, spero non ti dispiace!!","06:59"],
     ["out","Chi ti ha dato questo numero?","09:41"],
@@ -765,7 +765,8 @@ var CHATS = {
     ["in","Buon pomeriggissimo!!! 🌻🌻","15:30"],
     ["in","Ti ho ripreso mentre provavi la scena del molo, sei venuto benissimo!! Si vedevano solo un po' le scarpe 👟","18:12"],
     ["in","Buongiornissimo!!! ☕ Pronti per il ciak??? 🎥🔥","07:01","Ieri"],
-    ["in","Buongiornissimo!!! ☕☕ Oggi si gira il finale!!! Che emozione!!! 🎬🎬🎬","07:02","Oggi"]]}
+    ["in","Buongiornissimo!!! ☕☕ Oggi si gira il finale!!! Che emozione!!! 🎬🎬🎬","07:02","Oggi"],
+    ["in","Ho saputo della tragedia!!! 😱😱 Sentite condoglianze!!! 🙏🕯️🌹 Spero che ti riprenda presto!!! 💪💐💐","21:04"]]}
 };
 var trashOpen = false;
 try{ trashOpen = sget("sessionStorage","ucp-trash")==="1"; }catch(e){}
@@ -826,7 +827,7 @@ function phRender(view, arg){
     el.innerHTML = '<div class="scr wa">'+
       '<div class="wa-hd"><button type="button" id="back" aria-label="Indietro">'+WA_I.back+'</button><div class="ttl"><b>Archiviate</b></div><div class="ic">'+WA_I.dots+'</div></div>'+
       '<div class="syschip">🔒 Queste chat sono bloccate e archiviate. Non compaiono nella lista principale.</div>'+
-      '<div class="clist">'+["lisa","michele"].map(waRow).join("")+'</div></div>';
+      '<div class="clist">'+["michele","lisa"].map(waRow).join("")+'</div></div>';
     document.getElementById("back").onclick=function(){ phRender("list"); };
     el.querySelectorAll("[data-chat]").forEach(function(b){ b.onclick=function(){ phRender("thread", b.getAttribute("data-chat")); }; });
   } else if(view==="thread"){
